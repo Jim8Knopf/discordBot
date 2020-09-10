@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 const fs = require("fs");
 
-// const discordToken = require("./discordToken");
+const conf = require("./config.json");
 const client = new Discord.Client();
 const prefix = "-";
 
@@ -51,4 +51,4 @@ client.on('messageReactionAdd', (reaction, user) => {
 	member.roles.add(roll).catch(console.error);
 })
 
-client.login("NzQ4NTc4ODUwODA3NDgwNDAy.X0feYQ.HNMRxq0QUaVzZ0qD9udgNK_xUGg");
+client.login(conf.dcToke);
