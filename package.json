@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Jim8Knopf/discordBot/issues"
   },
-  "homepage": "https://github.com/Jim8Knopf/discordBot#readme"
+  "homepage": "https://github.com/Jim8Knopf/discordBot#readme",
+  "dependencies": {
+    "discord.js": "^12.3.1"
+  }
 }
