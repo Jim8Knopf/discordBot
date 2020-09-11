@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 const fs = require("fs");
 
-const conf = require("./conf/setup.json");
+const conf = require("./conf/token.json");
 const client = new Discord.Client();
 const prefix = "-";
 
@@ -42,7 +42,7 @@ client.on("message", (message) => {
 
 client.on("messageReactionAdd", (reaction, user) => {
 	if (user.bot) return;
-	if (reaction.message.channel.id !== chanel.id) return;
+	// if (reaction.message.channel.id !== chanel.id) return;
 	const { guild } = reaction.message;
 	const roll = guild.roles.cache.find((role) => role.name === "CK Kämpfer");
 	const member = guild.members.cache.find((member) => member.id === user.id);
