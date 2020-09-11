@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 const fs = require("fs");
 
-const conf = require("./config.json");
+const conf = require("./conf/setup.json");
 const client = new Discord.Client();
 const prefix = "-";
 
