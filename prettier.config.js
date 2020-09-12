@@ -4,23 +4,23 @@ module.exports = {
 	useTabs: true,
 	semi: true,
 	singleQuote: false,
-	quoteProps: "as-needed",
+	quoteProps: 'as-needed',
 	jsxSingleQuote: false,
-	trailingComma: "all",
+	trailingComma: 'all',
 	bracketSpacing: true,
 	jsxBracketSameLine: false,
-	arrowParens: "always",
+	arrowParens: 'always',
 	overrides: [
 		{
-			files: ".editorconfig",
+			files: '.editorconfig',
 			options: {
-				parser: "yaml",
+				parser: 'yaml',
 			},
 		},
 		{
-			files: "LICENSE",
+			files: 'LICENSE',
 			options: {
-				parser: "markdown",
+				parser: 'markdown',
 			},
 		},
 	],
